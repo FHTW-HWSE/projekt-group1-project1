@@ -26,28 +26,59 @@
 
 //************FIND AVAILABLEE SEAT AND ASSIGNE IT TO STUDEN**************
 
-//This function is checking int the room data what seats are still available.
+//This function is checking int the room data what seats are still available, randomly selects one of the available seats
+//and assigns the selected seat to the user data
 
+void checkAvailableSeats(Room* room, User* users, int numUsers) {
+    int availableSeats[MAX_NUM_SEATS];
+    int numAvailableSeats = 0;
 
-//This Function randomly selects one of the available seats
+    // Loop through each seat in the room
+    for (int i = 0; i < room->numSeats; i++) {
+        int seatNum = room->seats[i];
 
+        // Check if the seat is available
+        bool isAvailable = true;
+        for (int j = 0; j < numUsers; j++) {
+            if (users[j].seatNum == seatNum) {
+                isAvailable = false;
+                break;
+            }
+        }
 
-//This Function assigns the selected seat to the user data
+        // If the seat is available, add it to the availableSeats array
+        if (isAvailable) {
+            availableSeats[numAvailableSeats] = seatNum;
+            numAvailableSeats++;
+        }
+    }
 
-
+    // Randomly choose an available seat and assign it to the user
+    if (numAvailableSeats > 0) {
+        int randIndex = rand() % numAvailableSeats;
+        int chosenSeatNumber = availableSeats[randomIndex];
+         // loop to find the user with the corresponding studentID
+        for (int i = 0; i < NUM_USERS; i++) {
+            if (users[i].id == studentID) {
+                users[i].seatNumber = chosenSeatNumber; // the user will be assigned the chosen seat
+                printf("Seat %d has been assigned to student with ID %d\n", chosenSeatNumber, studentID);
+                break;
+        }
+    }
+}
 
 
 //**********CHECK FUNCTION IF USER IS REGISTERED FOR THE EXAM************
 
 //This function is checking if the entered ID is available in the user data
-
-
-//If the user ID exists the function returns true
-
-
-//If the ID doesn't exists, the function returns false and prints an related error message to the console
-
-
+bool checkRegistration(int studentID) {
+    for (int i = 0; i < numRegisteredUsers; i++) {
+        if (registeredUsers[i].studentID == studentID) {
+            return true; // Student is registered
+        }
+    }
+    return false; // Student is not registered
+}
 
 //**********************FUNCTION FOR REGISTRATION************************
 
@@ -80,7 +111,6 @@ void registerForExam() {
 
   printf("Seat assigned: Student ID %d is assigned to seat %d.\n", studentID, seatNumber);
 }
-
 
 
 //***********************************************************************
