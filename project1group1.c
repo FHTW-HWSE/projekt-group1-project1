@@ -5,6 +5,50 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+#define MAX_ROWS     20
+#define MAX_SEATS    20
+#define MAX_STUDENTS MAX_ROWS * MAX_SEATS
+
+#define MAX_TOKEN_LEN 100
+
+typedef struct {
+    char name[MAX_TOKEN_LEN];
+    char id[MAX_TOKEN_LEN];
+} student;
+
+//Funktion load_students
+int load_students(student students[], char file_path[]) {
+    
+    FILE* student_list = fopen(file_path, "r");
+    if (student_list == NULL) {
+        printf("Datenbank nicht gefunden.\n");
+        return 0;
+    }
+    
+    char line_buffer[100];
+    int index = 0;
+    
+    char *token_buffer; // Speichert einen Teil vom String. 
+                        // Z.B. "Eteri" aus "Eteri,123456"
+    
+    while(!feof(student_list)) {
+        fgets(line_buffer, sizeof(line_buffer), student_list);
+        
+        token_buffer = strtok(line_buffer, ",");
+        strcpy(students[index].name, token_buffer);
+        
+        token_buffer = strtok(NULL, ",");
+        strcpy(students[index].id, token_buffer);
+        
+        index++;
+        
+        if (index > MAX_STUDENTS)
+            return index;
+    }
+    
+    return index;
+}
+
 
 //***************************FUNCTION READ FILE**************************
 
