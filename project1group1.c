@@ -50,21 +50,6 @@ int load_students(student students[], char file_path[]) {
 }
 
 
-//***************************FUNCTION READ FILE**************************
-
-
-
-//**********************FUNCTION WRITE FILE TO ARRAY*********************
-
-
-
-//**********************FUNCTION WRITE ARRAY TO FILE*********************
-
-
-
-//********************ID AND NEIGHBOR SEARCH FUNCTION********************
-
-
 
 
 
