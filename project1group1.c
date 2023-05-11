@@ -97,18 +97,6 @@ void checkAvailableSeats(Room* room, User* users, int numUsers) {
 }
 
 
-//**********CHECK FUNCTION IF USER IS REGISTERED FOR THE EXAM************
-
-//This function is checking if the entered ID is available in the user data
-bool checkRegistration(int studentID) {
-    for (int i = 0; i < numRegisteredUsers; i++) {
-        if (registeredUsers[i].studentID == studentID) {
-            return true; // Student is registered
-        }
-    }
-    return false; // Student is not registered
-}
-
 //**********************FUNCTION FOR REGISTRATION************************
 
 void registerForExam() {
