@@ -3,16 +3,22 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 #define MAX_ROWS     20
 #define MAX_SEATS    20
 #define MAX_STUDENTS MAX_ROWS * MAX_SEATS
 
 #define MAX_TOKEN_LEN 100
 
+/**
+ * @brief Auswahl der gewuenschten Auslastung
+*/
+typedef enum{ QUATER, HALF, FULL } Selection;
+
 typedef struct {
     char name[MAX_TOKEN_LEN];
     char id[MAX_TOKEN_LEN];
-} student;
+} Student;
 
 /**
  * @brief Liest eine CSV-Datei aus, in der Schuelernamen- und Kennungen gespeichert sind und speichert jeden Schueler in ein Element vom Typen student
@@ -20,7 +26,7 @@ typedef struct {
  * @param file_path Ein String der den Pfad zur Datenbank beinhaltet
  * @return Die Anzahl der gespeicherten Studenten
 */
-int load_students(student students[], char file_path[]) {
+int load_students(Student students[], char file_path[]) {
     
     FILE* student_list = fopen(file_path, "r");
     if (student_list == NULL) {
@@ -53,7 +59,7 @@ int load_students(student students[], char file_path[]) {
     return index;
 }
 
-void save_students(student students[], int student_count, char file_path[]) {
+void save_students(Student students[], int student_count, char file_path[]) {
     FILE* student_list = fopen(file_path, "w");
     if (student_list == NULL) {
         printf("Datenbank konnte nicht generiert werden.\n");
@@ -67,10 +73,46 @@ void save_students(student students[], int student_count, char file_path[]) {
     fclose(student_list);
 }
 
+
+/**
+ * @brief Fordert den Benutzer auf eine Auswahl zu treffen, wie stark der Saal ausgelastet werden soll. Drei Moeglichkeiten stehen zur Auswahl.
+ * @return Die Auswahl des Benutzers als Typ enum Selection
+*/
+Selection select_layout() {
+    printf("Sie haben die Moeglichkeit eine Auslastungsrate fuer den Hoersaal zu waehlen.\n"
+            "Wird keine Auswahl getroffen, gibt es keine Einschraenkungen und es wird eine 100%% Auslastung des Hoersaals generiert.\n\n"
+            "Sie koennen nun waehlen:\n"
+            "1 fuer eine 25%% Auslastung.\n"
+            "2 fuer eine 50%% Auslastung.\n"
+            "3 fuer eine volle Auslastung.\n"
+            "Bitte waehlen: ");
+
+    int choice;
+    scanf("%d", &choice);
+
+    while(choice > 3 || choice < 1){
+        printf("Ungueltige Eingabe.\nBitte waehlen: ");
+        scanf("%d", &choice);
+    }
+
+    printf("Sie haben %d gewaehlt.", choice);
+    if (choice == 1) {
+        printf("Es wird nun eine Auslastungsrate von 25%% generiert.");
+        return QUATER;
+    }
+    if (choice == 2) {
+        printf("Es wird nun eine Auslastungsrate von 50%% generiert.");
+        return HALF;
+    }
+    
+    printf("Sie haben keine Auswahl getroffen. Der Hoersaal kann komplett belegt werden.");
+    return FULL;
+}
+
 int main(void) {
     
     /* Unit test */
-    student students[MAX_STUDENTS];
+    Student students[MAX_STUDENTS];
     char test_path[] = "/home/student/HWSE/CProjektSS23/projekt-group1-project1/sample.csv";
     int student_count  = 3;
     
@@ -96,6 +138,35 @@ int main(void) {
     for (int i = 0; i < student_count; i++) {
         printf("Name: %s\nID: %s\n\n", students[i].name, students[i].id);
     }
+
+    /* Unit Test select_layout */
+
+    printf("Unit Test der Funktion select_layout\n"
+           "====================================\n\n"
+           "Geben Sie nach der Aufforderung '1' ein.\n\n");
     
+    if(select_layout() == QUATER) {
+        printf("\nUnit Test bestanden.\n");
+    } else {
+        printf("\nEtwas ist nicht nach Plan gelaufen.\n");
+    }
+
+    printf("Geben Sie nach der Aufforderung '2' ein.\n\n");
+
+    if(select_layout() == HALF) {
+         printf("\nUnit Test bestanden.\n");
+    } else {
+        printf("\nEtwas ist nicht nach Plan gelaufen.\n");
+    }
+
+
+    printf("Geben Sie nach der Aufforderung '3' ein.\n\n");
+    
+    if(select_layout() == FULL) {
+         printf("\nUnit Test bestanden.\n");
+    } else {
+        printf("\nEtwas ist nicht nach Plan gelaufen.\n");
+    }
+
     return 0;
 }
