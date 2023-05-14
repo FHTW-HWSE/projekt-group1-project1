@@ -14,6 +14,12 @@ typedef struct {
     char id[MAX_TOKEN_LEN];
 } student;
 
+/**
+ * @brief Liest eine CSV-Datei aus, in der Schuelernamen- und Kennungen gespeichert sind und speichert jeden Schueler in ein Element vom Typen student
+ * @param students Ein Array aus struct students, welches grosz genug sein muss um jeden Schueler speichern zu koennen
+ * @param file_path Ein String der den Pfad zur Datenbank beinhaltet
+ * @return Die Anzahl der gespeicherten Studenten
+*/
 int load_students(student students[], char file_path[]) {
     
     FILE* student_list = fopen(file_path, "r");
@@ -90,9 +96,6 @@ int main(void) {
     for (int i = 0; i < student_count; i++) {
         printf("Name: %s\nID: %s\n\n", students[i].name, students[i].id);
     }
-    
-
-    
     
     return 0;
 }
