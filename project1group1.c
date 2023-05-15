@@ -18,6 +18,8 @@ typedef enum{ QUATER, HALF, FULL } Selection;
 typedef struct {
     char name[MAX_TOKEN_LEN];
     char id[MAX_TOKEN_LEN];
+    int seat_row;
+    int seat_number;
 } Student;
 
 /**
@@ -48,6 +50,9 @@ int load_students(Student students[], char file_path[]) {
         token_buffer = strtok(NULL, ",");
         strcpy(students[index].id, token_buffer);
         
+        students[index].seat_row = -1;
+        students[index].seat_number = -1;
+
         index++;
         
         if (index > MAX_STUDENTS)
@@ -109,6 +114,24 @@ Selection select_layout() {
     return FULL;
 }
 
+
+int assign_seat(Student students[], int student_count) {
+srand(time(NULL)); // Initialize random number generator with current time
+int row, seat;
+do {
+    row = rand() % MAX_ROWS;       // Generate random row number
+    seat = rand() % MAX_SEATS;     // Generate random seat number
+} while (students[row * MAX_SEATS + seat].seat_row != -1); // Repeat if seat is already assigned
+
+students[row * MAX_SEATS + seat].seat_row = row;
+students[row * MAX_SEATS + seat].seat_number = seat;
+
+return row * MAX_SEATS + seat; // Return the seat index
+}
+
+
+
+
 int main(void) {
     
     /* Unit test */
@@ -167,6 +190,25 @@ int main(void) {
     } else {
         printf("\nEtwas ist nicht nach Plan gelaufen.\n");
     }
+
+  /* Sitzplatzvergabe bei Eingabe einer Studierendenkennung */
+    char student_id[MAX_TOKEN_LEN];
+    printf("Geben Sie die Studierendenkennung ein: ");
+    scanf("%s", student_id);
+     int seat_index = -1;
+    for (int i = 0; i < student_count; i++) {
+        if (strcmp(students[i].id, student_id) == 0) {
+            seat_index = assign_seat(students, student_count);
+            students[i].seat_row = seat_index / MAX_SEATS;
+            students[i].seat_number = seat_index % MAX_SEATS;
+            printf("Sitzplatz zugewiesen: Reihe %d, Platz %d\n", students[i].seat_row, students[i].seat_number);
+            break;
+        }
+    }
+    if (seat_index == -1) {
+        printf("Studierende mit der Kennung %s wurde nicht gefunden.\n", student_id);
+    }
+    
 
     return 0;
 }
