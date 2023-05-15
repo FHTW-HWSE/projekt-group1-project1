@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-
+fggf
 
 #define MAX_ROWS     20
 #define MAX_SEATS    20
