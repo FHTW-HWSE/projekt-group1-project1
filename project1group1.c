@@ -88,23 +88,23 @@ Selection select_layout() {
             "Sie koennen nun waehlen:\n"
             "1 fuer eine 25%% Auslastung.\n"
             "2 fuer eine 50%% Auslastung.\n"
-            "3 fuer eine volle Auslastung.\n"
+            "Enter fuer eine volle Auslastung.\n"
             "Bitte waehlen: ");
 
-    int choice;
-    scanf("%d", &choice);
+    char user_input[MAX_TOKEN_LEN];
 
-    while(choice > 3 || choice < 1){
+    fgets(user_input, MAX_TOKEN_LEN, stdin);
+
+    while((user_input[0] > '3' || user_input[0] < '1') && user_input[0] != '\n'){
         printf("Ungueltige Eingabe.\nBitte waehlen: ");
-        scanf("%d", &choice);
+        fgets(user_input, MAX_TOKEN_LEN, stdin);
     }
 
-    printf("Sie haben %d gewaehlt.", choice);
-    if (choice == 1) {
+    if (user_input[0] == '1') {
         printf("Es wird nun eine Auslastungsrate von 25%% generiert.");
         return QUATER;
     }
-    if (choice == 2) {
+    if (user_input[0] == '2') {
         printf("Es wird nun eine Auslastungsrate von 50%% generiert.");
         return HALF;
     }
@@ -173,7 +173,7 @@ int main(void) {
         printf("\nEtwas ist nicht nach Plan gelaufen.\n");
     }
 
-    printf("Geben Sie nach der Aufforderung '2' ein.\n\n");
+    printf("\n\n***** Geben Sie nach der Aufforderung '2' ein. *****\n\n");
 
     if(select_layout() == HALF) {
          printf("\nUnit Test bestanden.\n");
@@ -182,7 +182,7 @@ int main(void) {
     }
 
 
-    printf("Geben Sie nach der Aufforderung '3' ein.\n\n");
+    printf("***** Geben Sie nach der Aufforderung Enter ein. *****\n\n");
     
     if(select_layout() == FULL) {
          printf("\nUnit Test bestanden.\n");
