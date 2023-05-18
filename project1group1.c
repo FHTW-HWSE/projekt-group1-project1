@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-fggf
 
 #define MAX_ROWS     20
 #define MAX_SEATS    20
@@ -206,8 +205,8 @@ int main(void) {
         }
     }
     if (seat_index == -1) {
-        printf("Studierende mit der Kennung %s wurde nicht gefunden.\n", student_id);*/
-    }
+        printf("Studierende mit der Kennung %s wurde nicht gefunden.\n", student_id);
+    }*/
     
 
     return 0;
