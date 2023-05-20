@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 #define MAX_ROWS     20
 #define MAX_SEATS    20
@@ -129,10 +130,53 @@ Selection select_layout() {
  * @param seats The number of seats according to the actual size of the room in use
 */
 void direct_neighbours(int row, int seat, Seat room[][MAX_SEATS], int rows, int seats) {
+    for(int i = 1; i<3; i++){
+        for(int j = 1; j<3; j++){
+            if(room[row+(int)pow(-1,j)][seat+(int)pow(-1,i)].student.id[0] != 0){
+                printf("%s, ",room[row+(int)pow(-1,j)][seat+(int)pow(-1,i)].student.name);
+            }
+        }
+    }
+    for(int i = 1; i<3; i++){
+        if(room[row+(int)pow(-1,i)][seat].student.id[0] != 0){
+            printf("%s, ",room[row+(int)pow(-1,i)][seat].student.name);
+        }
+    }
     /*
     Check index boundries
-    Check for availability
-    Check for seated student
+    */
+}
+
+void indirect_neighbours(int row, int seat, Seat room[][MAX_SEATS], int rows, int seats) {
+    for(int i = 1; i<3; i++){
+        for(int j = 1; j<3; j++){
+            if(room[row+(int)pow(-1,j)][seat+2*(int)pow(-1,i)].student.id[0] != 0){
+                printf("%s, ",room[row+(int)pow(-1,j)][seat+2*(int)pow(-1,i)].student.name);
+            }
+        }
+    }
+    
+    for(int i = 1; i<3; i++){
+        for(int j = 1; j<3; j++){
+            if(room[row+2*(int)pow(-1,j)][seat+(int)pow(-1,i)*(int)pow(2,i-1)].student.id[0] != 0){
+                printf("%s, ",room[row+2*(int)pow(-1,j)][seat+(int)pow(-1,i)*(int)pow(2,i-1)].student.name);
+            }
+        }
+    }
+
+    for(int i = 1; i<3; i++){
+        if(room[row+2*(int)pow(-1,i)][seat].student.id[0] != 0){
+            printf("%s, ",room[row+2*(int)pow(-1,i)][seat].student.name);
+        }
+    }
+
+    for(int i = 1; i<3; i++){
+        if(room[row][seat+2*(int)pow(-1,i)].student.id[0] != 0){
+            printf("%s, ",room[row][seat+2*(int)pow(-1,i)].student.name);
+        }
+    }
+    /*
+    Check index boundries
     */
 }
 
