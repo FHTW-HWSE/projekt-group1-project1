@@ -275,8 +275,7 @@ int main(void) {
     fully_occupied(room, rows, seats);
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < seats; j++)
-            printf("Sitzplatznummernausgabe: %d ", room[i][j]);
-
+            printf("Sitzplatznummernausgabe: %d ", room[i][j].available);
 
 
   /* Sitzplatzvergabe bei Eingabe einer Studierendenkennung */
