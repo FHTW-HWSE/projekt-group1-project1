@@ -21,6 +21,13 @@ typedef struct {
     //int seat_number;
 } Student;
 
+typedef struct
+{
+    int available;
+    Student student;
+} Seat;
+
+
 /**
  * @brief Liest eine CSV-Datei aus, in der Schuelernamen- und Kennungen gespeichert sind und speichert jeden Schueler in ein Element vom Typen student
  * @param students Ein Array aus struct students, welches grosz genug sein muss um jeden Schueler speichern zu koennen
@@ -113,6 +120,21 @@ Selection select_layout() {
     return FULL;
 }
 
+/**
+ * @brief Gets coordinates for a seat of a student and prints out all direct neighbors
+ * @param row The row of the desired student
+ * @param seat The seat number of the desired student
+ * @param room A 2D-array consisting of the maximum possible numbers of seats and rows
+ * @param rows The number of rows according to the actual size of the room in use
+ * @param seats The number of seats according to the actual size of the room in use
+*/
+void direct_neighbours(int row, int seat, Seat room[][MAX_SEATS], int rows, int seats) {
+    /*
+    Check index boundries
+    Check for availability
+    Check for seated student
+    */
+}
 
 /*int assign_seat(Student students[], int student_count) {
 srand(time(NULL)); // Initialize random number generator with current time
