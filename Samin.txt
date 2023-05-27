@@ -16,6 +16,20 @@
         printf("Studierende mit der Kennung %s wurde nicht gefunden.\n", student_id);
     }*/
     
+    /*int assign_seat(Student students[], int student_count) {
+srand(time(NULL)); // Initialize random number generator with current time
+int row, seat;
+do {
+    row = rand() % MAX_ROWS;       // Generate random row number
+    seat = rand() % MAX_SEATS;     // Generate random seat number
+} while (students[row * MAX_SEATS + seat].seat_row != -1); // Repeat if seat is already assigned
+
+students[row * MAX_SEATS + seat].seat_row = row;
+students[row * MAX_SEATS + seat].seat_number = seat;
+
+return row * MAX_SEATS + seat; // Return the seat index
+}*/
+
 
 Aus der Funktion load_students, vor der Zeile index++:
         // students[index].seat_row = -1;
