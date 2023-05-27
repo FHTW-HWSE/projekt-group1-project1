@@ -6,6 +6,50 @@
 #include "project1group1.h"
 
 
+
+
+/**
+ * @brief Fordert den Benutzer auf eine Auswahl zu treffen, wie stark der Saal ausgelastet werden soll. Drei Moeglichkeiten stehen zur Auswahl.
+ * @return Die Auswahl des Benutzers als Typ enum Selection
+*/
+Selection select_layout() {
+    printf("Sie haben die Moeglichkeit eine Auslastungsrate fuer den Hoersaal zu waehlen.\n"
+            "Wird keine Auswahl getroffen, gibt es keine Einschraenkungen und es wird eine 100%% Auslastung des Hoersaals generiert.\n\n"
+            "Sie koennen nun waehlen:\n"
+            "1 fuer eine 25%% Auslastung.\n"
+            "2 fuer eine 50%% Auslastung.\n"
+            "Enter fuer eine volle Auslastung.\n"
+            "Bitte waehlen: ");
+
+    char user_input[MAX_TOKEN_LEN];
+
+    fgets(user_input, MAX_TOKEN_LEN, stdin);
+
+    while((user_input[0] > '3' || user_input[0] < '1') && user_input[0] != '\n'){
+        printf("Ungueltige Eingabe.\nBitte waehlen: ");
+        fgets(user_input, MAX_TOKEN_LEN, stdin);
+    }
+
+    if (user_input[0] == '1') {
+        printf("Es wird nun eine Auslastungsrate von 25%% generiert.");
+        return QUATER;
+    }
+    if (user_input[0] == '2') {
+        printf("Es wird nun eine Auslastungsrate von 50%% generiert.");
+        return HALF;
+    }
+    
+    printf("Sie haben keine Auswahl getroffen. Der Hoersaal kann komplett belegt werden.");
+    return FULL;
+}
+
+void prompt_student(Student* studentseat){
+    printf("Bitte geben Sie den Namen ein:");
+    fgets(studentseat->name, MAX_TOKEN_LEN,stdin);
+    printf("Bitte geben Sie die Student-ID ein:");
+    fgets(studentseat->id, MAX_TOKEN_LEN,stdin);
+}
+
 /**
  * @brief Liest eine CSV-Datei aus, in der Schuelernamen- und Kennungen gespeichert sind und speichert jeden Schueler in ein Element vom Typen student
  * @param students Ein Array aus struct students, welches grosz genug sein muss um jeden Schueler speichern zu koennen
@@ -57,42 +101,6 @@ void save_students(Student students[], int student_count, char file_path[]) {
         if (i < student_count-1) fprintf(student_list, "\n");
     }
     fclose(student_list);
-}
-
-
-/**
- * @brief Fordert den Benutzer auf eine Auswahl zu treffen, wie stark der Saal ausgelastet werden soll. Drei Moeglichkeiten stehen zur Auswahl.
- * @return Die Auswahl des Benutzers als Typ enum Selection
-*/
-Selection select_layout() {
-    printf("Sie haben die Moeglichkeit eine Auslastungsrate fuer den Hoersaal zu waehlen.\n"
-            "Wird keine Auswahl getroffen, gibt es keine Einschraenkungen und es wird eine 100%% Auslastung des Hoersaals generiert.\n\n"
-            "Sie koennen nun waehlen:\n"
-            "1 fuer eine 25%% Auslastung.\n"
-            "2 fuer eine 50%% Auslastung.\n"
-            "Enter fuer eine volle Auslastung.\n"
-            "Bitte waehlen: ");
-
-    char user_input[MAX_TOKEN_LEN];
-
-    fgets(user_input, MAX_TOKEN_LEN, stdin);
-
-    while((user_input[0] > '3' || user_input[0] < '1') && user_input[0] != '\n'){
-        printf("Ungueltige Eingabe.\nBitte waehlen: ");
-        fgets(user_input, MAX_TOKEN_LEN, stdin);
-    }
-
-    if (user_input[0] == '1') {
-        printf("Es wird nun eine Auslastungsrate von 25%% generiert.");
-        return QUATER;
-    }
-    if (user_input[0] == '2') {
-        printf("Es wird nun eine Auslastungsrate von 50%% generiert.");
-        return HALF;
-    }
-    
-    printf("Sie haben keine Auswahl getroffen. Der Hoersaal kann komplett belegt werden.");
-    return FULL;
 }
 
 /**
@@ -168,9 +176,6 @@ void fully_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
 
 int main(void) {
     
-  
-
-
     return 0;
 }
 
