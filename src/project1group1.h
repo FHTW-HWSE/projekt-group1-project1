@@ -39,6 +39,8 @@ void save_students(Student students[], int student_count, char file_path[]) ;
 */
 Selection select_layout();
 
+int seat_exist(int row, int seat, Seat room[][MAX_SEATS], int rows, int seats);
+
 /**
  * @brief Gets coordinates for a seat of a student and prints out all direct neighbors
  * @param row The row of the desired student
@@ -58,5 +60,7 @@ void indirect_neighbours(int row, int seat, Seat room[][MAX_SEATS], int rows, in
  * @param seats Die Anzahl der Sitze pro Sitzreihe
 */
 void fully_occupied(Seat room[][MAX_SEATS], int rows, int seats);
+void half_occupied(Seat room[][MAX_SEATS], int rows, int seats);
+void quarter_occupied(Seat room[][MAX_SEATS], int rows, int seats);
 
 #endif

@@ -100,6 +100,15 @@ void save_students(Student students[], int student_count, char file_path[]) {
     fclose(student_list);
 }
 
+int seat_exist(int row, int seat, Seat room[][MAX_SEATS], int rows, int seats) {
+    int exist = 1;
+    if (row < 0 || seat < 0 || row > rows || seat > seats) {
+        exist = 0;
+    }
+    
+    return exist;
+}
+
 /**
  * @brief Gets coordinates for a seat of a student and prints out all direct neighbors
  * @param row The row of the desired student
@@ -169,6 +178,32 @@ void fully_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < seats; j++)
             room[i][j].available = 1;
+}
+
+void half_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < seats; j++) {
+            if (i % 2 == 0) {
+                if (j % 2 == 1) {
+                    room[i][j].available = 1;
+                }
+            } else {
+                if (j % 2 == 0) {
+                    room[i][j].available = 1;
+                }
+            }
+        }
+}
+
+void quarter_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < seats; j++) {
+            if (i % 2 == 0) {
+                if (j % 2 == 1) {
+                    room[i][j].available = 1;
+                }
+            }
+        }
 }
 
 int main(void) {
