@@ -56,7 +56,8 @@ int main(void) {
         printf("\nEtwas ist nicht nach Plan gelaufen.\n");
     }
 
-    /* Unit Test */
+
+    printf("Unit-testing seating patterns\n");
 
     int rows = 5;
     int seats = 3;
@@ -66,6 +67,43 @@ int main(void) {
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < seats; j++)
             printf("Sitzplatznummernausgabe: %d ", room[i][j].available);
+
+
+    printf("Half occupied:\n\n");
+    // Generating seating pattern for half occupied
+    half_occupied(room, MAX_ROWS, seats);
+
+    for (int r = 0; r < MAX_ROWS; r++)
+    {
+        for (int s = 0; s < seats; s++)
+        {
+            printf(" %d ", room[r][s].available);
+        }
+        printf("\n");
+    }
+    
+    
+    for (int r = 0; r < MAX_ROWS; r++)
+    {
+        for (int s = 0; s < MAX_SEATS; s++)
+        {
+            room[r][s].available = 0;
+        }
+    }
+    
+    
+    printf("\n\n\nQuarter occupied:\n\n");
+    // Generating seating pattern for half occupied
+    quarter_occupied(room, MAX_ROWS, seats);
+
+    for (int r = 0; r < MAX_ROWS; r++)
+    {
+        for (int s = 0; s < seats; s++)
+        {
+            printf(" %d ", room[r][s].available);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
