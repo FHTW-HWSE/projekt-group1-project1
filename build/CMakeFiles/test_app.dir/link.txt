@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test_app.dir/src/utils.c.o CMakeFiles/test_app.dir/test/unit_tests.c.o -o test_app  -lm 

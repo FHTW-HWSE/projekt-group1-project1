@@ -1,4 +1,9 @@
-#include "project1group1.h"
+#include "../src/project1group1.h"
+
+#include <string.h>
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
 
 int main(void) {
 
