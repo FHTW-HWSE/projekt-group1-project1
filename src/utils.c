@@ -203,3 +203,20 @@ void quarter_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
             }
         }
 }
+
+
+
+int assign_seat(Seat room[][MAX_SEATS], int rows, int seats, Student student) {
+    for (int r = 0; r < MAX_ROWS; r++) {
+        for (int s = 0; s < MAX_SEATS; s++) {
+            if (room[r][s].available == 1) {
+                strcpy(room[r][s].student.name, student.name);
+                strcpy(room[r][s].student.id, student.id);
+                room[r][s].available = 0;
+                printf("Sitzplatz zugewiessen: Reihe %d, Platz %d \n" , r , s );
+                return 1;
+            }
+        }
+    }
+    return 0;
+}

@@ -62,5 +62,6 @@ void indirect_neighbours(int row, int seat, Seat room[][MAX_SEATS], int rows, in
 void fully_occupied(Seat room[][MAX_SEATS], int rows, int seats);
 void half_occupied(Seat room[][MAX_SEATS], int rows, int seats);
 void quarter_occupied(Seat room[][MAX_SEATS], int rows, int seats);
+int assign_seat(Seat room[][MAX_SEATS], int rows, int seats, Student student);
 
 #endif
