@@ -9,11 +9,11 @@ Samin Aghaeihajiagha
 Verzeichnis:
 I........Aufgabenstellung
 II.......Requirements
-III......Standard USER STORIES
-IV.......
+III......USER STORIES
+IV.......Programmstruktur
 V........Projektdokumentation
 
-***************************************************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************************************************
 
 I. Aufgabenstellung 
 
@@ -64,8 +64,66 @@ Auswahl der Abfrage der Sitznachbarn eines erkrankten Studenten:
    Abfragen der direkten Nachbarn eines bestimmten Studierenden, abfragen der indirekten Nachbarn eines bestimmten Studierenden. 
    Wird ein Student krank und man muss nun die Nachbarn eruieren, kann man nach Eingabe der Studenteneigenschaften die direkten und indirekten Nachbarn abfragen, 
    die in einer CSV Datei abgespeichert wurden.
-   
-***************************************************************************************************************************************************************************************************************
+
+Nicht-Funktionale Requirements:
+    Es wird gibt ein benützerfreundliches User Interface, das den Benützer narrensicher durch das Programm leitet.
+    Es werden 2 CSV Dateien erstellt. Die 1. CSV Datei um die Prüfungen abzuspeichern mit den dazugehörigen Eigenschaften und die 2. CSV Datei enthält die Studentendaten und die Sitzplätze.
+    Die Verzeichnisse der CSV Dateien könne gelesen werden damit dem Benützer mit einfacher Eingabe die Sitznachbarn ausgeben werden können.
+
+**************************************************************************************************************************************************************************************************************
+
+III. User Story:
+
+Benützer will ein neues Exam erstellen (Name, Datum, Uhrzeit, Raumnummer) um einen Hörsaal mit passender Größe zu generieren um die Sitznachbarn der Studenten abzufragen.
+
+Given: Benützer startet Programm
+When:  ein neues Exam stattfindet
+Then:  Benützer wird aufgefordert ein neues Exam zu erstellen oder eine Sitznachbarabfrage stattfinden soll
+
+Given: Benützer will neues Exam starten
+When:  ein neues Exam stattfindet
+Then:  Benützer wird aufgefordert Exameigenschaften einzugeben
+
+Given: Benützer will Exam speichern
+When:  Exameigenschaften eingegeben wurden
+Then:  werden Exameigenschaften in einer CSV Datei mit einer eigenen ID abgespeichert und diese ID wird ausgegeben
+
+Given: Benützer will die Auslastung zu einem Hörsaal generieren
+When:  ein neues Eam erstellt wurde
+Then:  Aufforderung an den Benützer die gewünschte Auslastung anzugeben
+
+Given: Aufforderung an den Benützer die Spalten und Rehen anzugeben
+When:  Auslastung angegeben wurde
+Then:  werden Anzahl der Spalten und Reihen angegeben
+
+Given: Student benütigt einen Sitzplatz
+When:  Auslastung und Größe generiert wurde
+Then:  wird der nächste freie Sitzplatz angezeigt, sofern einer existiert
+
+
+
+
+
+**************************************************************************************************************************************************************************************************************
+
+IV. Programmstruktur:
+
+Main:
+    Abfrage der gewünschten Ausgabe, Hörsaalgenerierung oder Sitznachbarabfrage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Projektdokumentation
 Projektname: Projekt1Gruppe1
