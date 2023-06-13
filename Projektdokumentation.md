@@ -7,6 +7,7 @@ Karin Lang
 Samin Aghaeihajiagha
 
 Verzeichnis:
+
 I........Aufgabenstellung
 II.......Requirements
 III......USER STORIES
@@ -36,7 +37,7 @@ Folgende Aufgaben muss das Programm erfüllen:
     • Abfragen der direkten Nachbarn eines bestimmten Studierenden. 
     • Abfragen der indirekten Nachbarn eines bestimmten Studierenden. 
     
-***************************************************************************************************************************************************************************************************************    
+**************************************************************************************************************************************************************************************************************
 
 II. Requirements:
 
@@ -100,7 +101,19 @@ Given: Student benütigt einen Sitzplatz
 When:  Auslastung und Größe generiert wurde
 Then:  wird der nächste freie Sitzplatz angezeigt, sofern einer existiert
 
+Given: Student wird auf diesem Sitzplatz gespeichert
+When:  Student an diesem Exam teilnimmt
+Then:  wird der Student mit dem dazugehörigen Sitzplatz in einer CSV Datei gespeichert
 
+Given: Benützer will die direkten und indirekten Sitznachbarn eines erkrankten Studenten abfragen
+When:  Student sich krank meldet
+Then:  wird im Menü Sitznachbarausgabe gewählt
+
+Given: Benützer benötigt eine Liste der Sitznachbarn
+When:  Exam ID wird angegeben um die Sitznachbarn abzufragen
+Then:  Benützer gibt Exam ID an
+
+Gioven: 
 
 
 
