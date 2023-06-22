@@ -29,31 +29,33 @@ int main(void) {
 
         printf("Datum (JJJJMMTT): ");
         fgets(date,MAX_TOKEN_LEN,stdin);
+        date[strlen(date)-1] = '\0';
         printf("Uhrzeit (HHMM): ");
         fgets(time,MAX_TOKEN_LEN,stdin);
+        time[strlen(time)-1] = '\0';
         printf("Raumnummer: ");
         fgets(room_id,MAX_TOKEN_LEN,stdin);
+        room_id[strlen(room_id)-1] = '\0';
         printf("Name: ");
         fgets(exam_name,MAX_TOKEN_LEN,stdin);
+        exam_name[strlen(exam_name)-1] = '\0';
 
 
         char test_id[MAX_TOKEN_LEN] = {0};
         strcat(test_id, date);
-        test_id[strlen(test_id)-1] = '\0';
         strcat(test_id, time);
-        test_id[strlen(test_id)-1] = '\0';
         strcat(test_id, room_id);
-        test_id[strlen(test_id)-1] = '\0';
         strcat(test_id, exam_name);
-        test_id[strlen(test_id)-1] = '\0';
         strcat(test_id, "-T");
 
         printf("Ihre Test-ID lautet: %s. Diese Kennung wird fuer zukuenftige abfragen benoetigt.\n", test_id);
 
         printf("Wie viele Sitzreihen befinden sich im Hoersaal: ");
-        scanf("%d", &rows);
+        fgets(user_input, MAX_TOKEN_LEN, stdin);
+        rows = atoi(user_input);
         printf("Wie viele Sitze gibt es pro Reihe: ");
-        scanf("%d", &seats);
+        fgets(user_input, MAX_TOKEN_LEN, stdin);
+        seats = atoi(user_input);
         Selection selection  = select_layout();
 
         switch (selection)
@@ -73,7 +75,7 @@ int main(void) {
 
         strcat(test_id, ".csv");
         FILE* exam_file = fopen(test_id, "w");
-        fprintf(exam_file, "%s,%s,%s,%s,%s,%s,%s", date, time, room_id, selection == FULL ? "FULL" : selection == HALF ? "HALF" : "QUARTER", rows, seats, exam_name);
+        fprintf(exam_file, "%s,%s,%s,%s,%d,%d,%s", date, time, room_id, selection == FULL ? "FULL" : selection == HALF ? "HALF" : "QUARTER", rows, seats, exam_name);
         fclose(exam_file);
 
         test_id[strlen(test_id)-5] = 'S';
@@ -82,12 +84,15 @@ int main(void) {
         while (true)
         {    
             Student student;
-            printf("Naechster Student (Vorname Nachname): ");
+            printf("Naechster Student (Vorname Nachname)\nGeben Sie eine Null ein um die Eingabe zu beenden: ");
             fgets(user_input,MAX_TOKEN_LEN,stdin);
+            user_input[strlen(user_input)-1] = '\0';
+            if (user_input[0] == '0') break;
             strcpy(student.name, user_input);
             fprintf(student_file, "%s,", user_input);
             printf("Studierendenkennung (ID): ");
             fgets(user_input,MAX_TOKEN_LEN,stdin);
+            user_input[strlen(user_input)-1] = '\0';
             strcpy(student.id, user_input);
             fprintf(student_file, "%s", user_input);
             if (assign_seat(room, rows, seats, student) == 0) {

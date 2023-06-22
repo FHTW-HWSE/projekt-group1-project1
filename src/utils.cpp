@@ -18,8 +18,10 @@ Selection select_layout() {
             "Bitte waehlen: ");
 
     char user_input[MAX_TOKEN_LEN] = {0};
-
-    fgets(user_input,MAX_TOKEN_LEN,stdin);
+    
+    fgets(user_input, MAX_TOKEN_LEN, stdin);
+    //fflush(stdin);
+    //scanf("%s", user_input); //fgets wird uebersprungen. aber nur hier und nicht auf macOS und ich weisz nicht warum
 
     while((user_input[0] > '3' || user_input[0] < '1') && user_input[0] != '\n'){
         printf("Ungueltige Eingabe.\nBitte waehlen: ");
@@ -27,15 +29,15 @@ Selection select_layout() {
     }
 
     if (user_input[0] == '1') {
-        printf("Es wird nun eine Auslastungsrate von 25%% generiert.");
+        printf("Es wird nun eine Auslastungsrate von 25%% generiert.\n");
         return QUATER;
     }
     if (user_input[0] == '2') {
-        printf("Es wird nun eine Auslastungsrate von 50%% generiert.");
+        printf("Es wird nun eine Auslastungsrate von 50%% generiert.\n");
         return HALF;
     }
     
-    printf("Sie haben keine Auswahl getroffen. Der Hoersaal kann komplett belegt werden.");
+    printf("Sie haben keine Auswahl getroffen. Der Hoersaal kann komplett belegt werden.\n");
     return FULL;
 }
 
