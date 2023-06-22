@@ -142,80 +142,80 @@ release_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/build
 .PHONY : release_app/fast
 
-src/project1group1.o: src/project1group1.c.o
+src/project1group1.o: src/project1group1.cpp.o
 .PHONY : src/project1group1.o
 
 # target to build an object file
-src/project1group1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.c.o
-.PHONY : src/project1group1.c.o
+src/project1group1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.cpp.o
+.PHONY : src/project1group1.cpp.o
 
-src/project1group1.i: src/project1group1.c.i
+src/project1group1.i: src/project1group1.cpp.i
 .PHONY : src/project1group1.i
 
 # target to preprocess a source file
-src/project1group1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.c.i
-.PHONY : src/project1group1.c.i
+src/project1group1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.cpp.i
+.PHONY : src/project1group1.cpp.i
 
-src/project1group1.s: src/project1group1.c.s
+src/project1group1.s: src/project1group1.cpp.s
 .PHONY : src/project1group1.s
 
 # target to generate assembly for a file
-src/project1group1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.c.s
-.PHONY : src/project1group1.c.s
+src/project1group1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.cpp.s
+.PHONY : src/project1group1.cpp.s
 
-src/utils.o: src/utils.c.o
+src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
 
 # target to build an object file
-src/utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.c.o
-.PHONY : src/utils.c.o
+src/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
 
-src/utils.i: src/utils.c.i
+src/utils.i: src/utils.cpp.i
 .PHONY : src/utils.i
 
 # target to preprocess a source file
-src/utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.c.i
-.PHONY : src/utils.c.i
+src/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
 
-src/utils.s: src/utils.c.s
+src/utils.s: src/utils.cpp.s
 .PHONY : src/utils.s
 
 # target to generate assembly for a file
-src/utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.c.s
-.PHONY : src/utils.c.s
+src/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
 
-test/unit_tests.o: test/unit_tests.c.o
+test/unit_tests.o: test/unit_tests.cpp.o
 .PHONY : test/unit_tests.o
 
 # target to build an object file
-test/unit_tests.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/unit_tests.c.o
-.PHONY : test/unit_tests.c.o
+test/unit_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/unit_tests.cpp.o
+.PHONY : test/unit_tests.cpp.o
 
-test/unit_tests.i: test/unit_tests.c.i
+test/unit_tests.i: test/unit_tests.cpp.i
 .PHONY : test/unit_tests.i
 
 # target to preprocess a source file
-test/unit_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/unit_tests.c.i
-.PHONY : test/unit_tests.c.i
+test/unit_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/unit_tests.cpp.i
+.PHONY : test/unit_tests.cpp.i
 
-test/unit_tests.s: test/unit_tests.c.s
+test/unit_tests.s: test/unit_tests.cpp.s
 .PHONY : test/unit_tests.s
 
 # target to generate assembly for a file
-test/unit_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/unit_tests.c.s
-.PHONY : test/unit_tests.c.s
+test/unit_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/unit_tests.cpp.s
+.PHONY : test/unit_tests.cpp.s
 
 # Help Target
 help:

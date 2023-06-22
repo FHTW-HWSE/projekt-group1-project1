@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/student/Documents/projekt-group1-project1/src/project1group1.c" "CMakeFiles/release_app.dir/src/project1group1.c.o" "gcc" "CMakeFiles/release_app.dir/src/project1group1.c.o.d"
-  "/home/student/Documents/projekt-group1-project1/src/utils.c" "CMakeFiles/release_app.dir/src/utils.c.o" "gcc" "CMakeFiles/release_app.dir/src/utils.c.o.d"
+  "/home/student/Documents/projekt-group1-project1/src/project1group1.cpp" "CMakeFiles/release_app.dir/src/project1group1.cpp.o" "gcc" "CMakeFiles/release_app.dir/src/project1group1.cpp.o.d"
+  "/home/student/Documents/projekt-group1-project1/src/utils.cpp" "CMakeFiles/release_app.dir/src/utils.cpp.o" "gcc" "CMakeFiles/release_app.dir/src/utils.cpp.o.d"
   )
 
 # Targets to which this target links.
