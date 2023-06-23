@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/release_app.dir/src/project1group1.cpp.o"
-  "CMakeFiles/release_app.dir/src/project1group1.cpp.o.d"
+  "CMakeFiles/release_app.dir/src/main.cpp.o"
+  "CMakeFiles/release_app.dir/src/main.cpp.o.d"
   "CMakeFiles/release_app.dir/src/utils.cpp.o"
   "CMakeFiles/release_app.dir/src/utils.cpp.o.d"
   "release_app"

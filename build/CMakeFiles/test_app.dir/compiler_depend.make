@@ -3,7 +3,7 @@
 
 CMakeFiles/test_app.dir/src/utils.cpp.o: /home/student/Documents/projekt-group1-project1/src/utils.cpp \
   /usr/include/stdc-predef.h \
-  /home/student/Documents/projekt-group1-project1/src/project1group1.hpp \
+  /home/student/Documents/projekt-group1-project1/src/utils.hpp \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
@@ -413,6 +413,10 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
 
 /usr/include/c++/10/deque:
 
+/home/student/Documents/projekt-group1-project1/src/project1group1.hpp:
+
+/usr/include/c++/10/stack:
+
 /usr/include/c++/10/bits/stream_iterator.h:
 
 /usr/include/c++/10/iterator:
@@ -641,18 +645,6 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/c++/10/stack:
-
-/home/student/Documents/projekt-group1-project1/src/project1group1.hpp:
-
-/usr/include/c++/10/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/c++/10/backward/auto_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
 /usr/include/c++/10/stdlib.h:
 
 /usr/include/stdio.h:
@@ -708,6 +700,12 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/10/backward/auto_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/10/include/stddef.h:
 
@@ -808,6 +806,8 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
 /usr/include/stdint.h:
 
 /usr/include/endian.h:
+
+/home/student/Documents/projekt-group1-project1/src/utils.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -916,6 +916,8 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
 /usr/include/c++/10/ostream:
 
 /usr/include/c++/10/ios:
+
+/usr/include/c++/10/bits/locale_classes.h:
 
 /usr/include/c++/10/bits/locale_classes.tcc:
 

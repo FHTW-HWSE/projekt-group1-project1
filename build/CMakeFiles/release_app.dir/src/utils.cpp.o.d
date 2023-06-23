@@ -1,7 +1,7 @@
 CMakeFiles/release_app.dir/src/utils.cpp.o: \
  /home/student/Documents/projekt-group1-project1/src/utils.cpp \
  /usr/include/stdc-predef.h \
- /home/student/Documents/projekt-group1-project1/src/project1group1.hpp \
+ /home/student/Documents/projekt-group1-project1/src/utils.hpp \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

@@ -1,4 +1,4 @@
-#include "project1group1.hpp"
+#include "utils.hpp"
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -8,7 +8,7 @@
  * @brief Fordert den Benutzer auf eine Auswahl zu treffen, wie stark der Saal ausgelastet werden soll. Drei Moeglichkeiten stehen zur Auswahl.
  * @return Die Auswahl des Benutzers als Typ enum Selection
 */
-Selection select_layout() {
+Selection select_layout(void) {
     printf("Sie haben die Moeglichkeit eine Auslastungsrate fuer den Hoersaal zu waehlen.\n"
             "Wird keine Auswahl getroffen, gibt es keine Einschraenkungen und es wird eine 100%% Auslastung des Hoersaals generiert.\n\n"
             "Sie koennen nun waehlen:\n"
@@ -20,9 +20,6 @@ Selection select_layout() {
     char user_input[MAX_TOKEN_LEN] = {0};
     
     fgets(user_input, MAX_TOKEN_LEN, stdin);
-    //fflush(stdin);
-    //scanf("%s", user_input); //fgets wird uebersprungen. aber nur hier und nicht auf macOS und ich weisz nicht warum
-
     while((user_input[0] > '3' || user_input[0] < '1') && user_input[0] != '\n'){
         printf("Ungueltige Eingabe.\nBitte waehlen: ");
         fgets(user_input, MAX_TOKEN_LEN, stdin);
@@ -212,8 +209,8 @@ void quarter_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
 
 
 int assign_seat(Seat room[][MAX_SEATS], int rows, int seats, Student student) {
-    for (int r = 0; r < MAX_ROWS; r++) {
-        for (int s = 0; s < MAX_SEATS; s++) {
+    for (int r = 0; r < rows; r++) {
+        for (int s = 0; s < seats; s++) {
             if (room[r][s].available == 1) {
                 strcpy(room[r][s].student.name, student.name);
                 strcpy(room[r][s].student.id, student.id);

@@ -247,4 +247,4 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: \
  /usr/include/c++/10/bits/regex.h /usr/include/c++/10/bits/regex.tcc \
  /usr/include/c++/10/bits/regex_executor.h \
  /usr/include/c++/10/bits/regex_executor.tcc /usr/include/c++/10/iostream \
- /home/student/Documents/projekt-group1-project1/test/../src/project1group1.hpp
+ /home/student/Documents/projekt-group1-project1/test/../src/utils.hpp

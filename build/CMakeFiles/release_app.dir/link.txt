@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/release_app.dir/src/utils.cpp.o CMakeFiles/release_app.dir/src/project1group1.cpp.o -o release_app  -lm 
+/usr/bin/g++ -g CMakeFiles/release_app.dir/src/utils.cpp.o CMakeFiles/release_app.dir/src/main.cpp.o -o release_app  -lm 

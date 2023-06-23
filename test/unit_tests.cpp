@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch.hpp>
 #include <stdio.h>
-#include "../src/project1group1.hpp"
+#include "../src/utils.hpp"
 
 TEST_CASE( "First run", "[test]" ) {
     printf("Generating 5 fictional students to log into a CSV-File:\n"

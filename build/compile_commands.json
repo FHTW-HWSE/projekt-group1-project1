@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/student/Documents/projekt-group1-project1/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/test_app.dir/src/utils.cpp.o -c /home/student/Documents/projekt-group1-project1/src/utils.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/utils.cpp"
+},
+{
+  "directory": "/home/student/Documents/projekt-group1-project1/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/test_app.dir/test/unit_tests.cpp.o -c /home/student/Documents/projekt-group1-project1/test/unit_tests.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/test/unit_tests.cpp"
+},
+{
+  "directory": "/home/student/Documents/projekt-group1-project1/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/release_app.dir/src/utils.cpp.o -c /home/student/Documents/projekt-group1-project1/src/utils.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/utils.cpp"
+},
+{
+  "directory": "/home/student/Documents/projekt-group1-project1/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/release_app.dir/src/main.cpp.o -c /home/student/Documents/projekt-group1-project1/src/main.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/main.cpp"
+}
+]

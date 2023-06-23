@@ -142,29 +142,29 @@ release_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/build
 .PHONY : release_app/fast
 
-src/project1group1.o: src/project1group1.cpp.o
-.PHONY : src/project1group1.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/project1group1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.cpp.o
-.PHONY : src/project1group1.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/project1group1.i: src/project1group1.cpp.i
-.PHONY : src/project1group1.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/project1group1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.cpp.i
-.PHONY : src/project1group1.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/project1group1.s: src/project1group1.cpp.s
-.PHONY : src/project1group1.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/project1group1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/project1group1.cpp.s
-.PHONY : src/project1group1.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
@@ -227,9 +227,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... release_app"
 	@echo "... test_app"
-	@echo "... src/project1group1.o"
-	@echo "... src/project1group1.i"
-	@echo "... src/project1group1.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"
