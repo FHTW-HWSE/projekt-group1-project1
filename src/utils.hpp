@@ -8,10 +8,12 @@
 
 #define MAX_TOKEN_LEN 50
 
+#define REMOVE_NEWLINE(a) if(strlen(a) > 0 && a[strlen(a)-1] == '\n') a[strlen(a)-1] = '\0';
+
 /**
  * @brief Auswahl der gewuenschten Auslastung
 */
-typedef enum{ QUATER, HALF, FULL } Selection;
+typedef enum{ QUARTER, HALF, FULL } Selection;
 
 typedef struct {
     char name[MAX_TOKEN_LEN];
@@ -30,9 +32,9 @@ typedef struct
  * @param file_path Ein String der den Pfad zur Datenbank beinhaltet
  * @return Die Anzahl der gespeicherten Studenten
 */
-int load_students(Student students[], char file_path[]);
+int load_students(Student students[], const char* file_path);
 
-void save_students(Student students[], int student_count, char file_path[]) ;
+void save_students(Student students[], int student_count, const char* file_path) ;
 
 /**
  * @brief Fordert den Benutzer auf eine Auswahl zu treffen, wie stark der Saal ausgelastet werden soll. Drei Moeglichkeiten stehen zur Auswahl.

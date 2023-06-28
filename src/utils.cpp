@@ -27,7 +27,7 @@ Selection select_layout(void) {
 
     if (user_input[0] == '1') {
         printf("Es wird nun eine Auslastungsrate von 25%% generiert.\n");
-        return QUATER;
+        return QUARTER;
     }
     if (user_input[0] == '2') {
         printf("Es wird nun eine Auslastungsrate von 50%% generiert.\n");
@@ -51,7 +51,7 @@ void prompt_student(Student* studentseat){
  * @param file_path Ein String der den Pfad zur Datenbank beinhaltet
  * @return Die Anzahl der gespeicherten Studenten
 */
-int load_students(Student students[], char file_path[]) {
+int load_students(Student students[], const char* file_path) {
     
     FILE* student_list = fopen(file_path, "r");
     if (student_list == NULL) {
@@ -86,7 +86,7 @@ int load_students(Student students[], char file_path[]) {
     return index;
 }
 
-void save_students(Student students[], int student_count, char file_path[]) {
+void save_students(Student students[], int student_count, const char* file_path) {
     FILE* student_list = fopen(file_path, "w");
     if (student_list == NULL) {
         printf("Datenbank konnte nicht generiert werden.\n");
@@ -182,6 +182,10 @@ void fully_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
 
 void half_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
     for (int i = 0; i < rows; i++)
+        for (int j = 0; j < seats; j++)
+            room[i][j].available = 0;
+
+    for (int i = 0; i < rows; i++)
         for (int j = 0; j < seats; j++) {
             if (i % 2 == 0) {
                 if (j % 2 == 1) {
@@ -196,6 +200,10 @@ void half_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
 }
 
 void quarter_occupied(Seat room[][MAX_SEATS], int rows, int seats) {
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < seats; j++)
+            room[i][j].available = 0;
+
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < seats; j++) {
             if (i % 2 == 0) {

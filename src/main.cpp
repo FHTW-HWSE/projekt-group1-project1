@@ -69,7 +69,7 @@ int main(void) {
             half_occupied(room, rows, seats);
             break;
         
-        case QUATER:
+        case QUARTER:
             student_limit /= 4;
             quarter_occupied(room, rows, seats);
             break;
