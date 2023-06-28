@@ -11,7 +11,7 @@ int main(void) {
     int rows = 0;
     int seats = 0;
 
-    printf("1) Neue Pruefung erstellen\n2) Sitznachbarn abfragen\n>");
+    printf("1) Neue Pruefung erstellen (Eingabe 1)\n2) Sitznachbarn abfragen (Eingabe 2)\n>");
     fgets(user_input,MAX_TOKEN_LEN,stdin);
 
     while (user_input[0] != '1' && user_input[0] != '2') {
@@ -36,7 +36,7 @@ int main(void) {
         printf("Raumnummer: ");
         fgets(room_id,MAX_TOKEN_LEN,stdin);
         room_id[strlen(room_id)-1] = '\0';
-        printf("Name: ");
+        printf("Name der Pruefung: ");
         fgets(exam_name,MAX_TOKEN_LEN,stdin);
         exam_name[strlen(exam_name)-1] = '\0';
 
@@ -192,11 +192,14 @@ int main(void) {
             
             assign_seat(room, rows, seats, student);
         }
-        found = 0;
-        while(!found) {
-            printf("Name vom Studenten: ");
+        
+        while(1) {
+            found = 0;
+            printf("Name vom Studenten\nGeben Sie eine Null ein um die Eingabe zu beenden: ");
             fgets(user_input,MAX_TOKEN_LEN,stdin);
             user_input[strlen(user_input)-1] = '\0';
+            if (user_input[0] == '0') break;
+
             for (int r = 0; r < rows; r++) {
                 for (int s = 0; s < seats; s++) {
                     if (strcmp(user_input, room[r][s].student.name) == 0) {

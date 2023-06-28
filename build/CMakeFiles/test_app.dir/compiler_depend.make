@@ -394,7 +394,7 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
   /usr/include/c++/10/bits/regex_executor.h \
   /usr/include/c++/10/bits/regex_executor.tcc \
   /usr/include/c++/10/iostream \
-  /home/student/Documents/projekt-group1-project1/src/project1group1.hpp
+  /home/student/Documents/projekt-group1-project1/src/utils.hpp
 
 
 /usr/include/c++/10/bits/regex_executor.tcc:
@@ -412,8 +412,6 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-g
 /usr/include/c++/10/bits/regex_error.h:
 
 /usr/include/c++/10/deque:
-
-/home/student/Documents/projekt-group1-project1/src/project1group1.hpp:
 
 /usr/include/c++/10/stack:
 
