@@ -109,13 +109,13 @@ Given: Benützer will die direkten und indirekten Sitznachbarn eines erkrankten 
 When:  Student sich krank meldet
 Then:  wird im Menü Sitznachbarausgabe gewählt
 
-Given: Benützer benötigt eine Liste der Sitznachbarn
-When:  Exam ID wird angegeben um die Sitznachbarn abzufragen
-Then:  Benützer gibt Exam ID an
+Given: Exam ID wird angegeben um die Sitznachbarn abzufragen
+When:  Benützer benötigt eine Liste der Studenten die an Examen teilgenommen haben
+Then:  Liste wird ausgegeben
 
-Gioven: 
-
-
+Given: Liste an Sitznachbarn soll eroiert werden
+When:  Sitznachbarn werden gesucht
+Then:  Sitznachbarn werden in der Konsole ausgegeben.
 
 **************************************************************************************************************************************************************************************************************
 
