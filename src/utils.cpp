@@ -102,7 +102,7 @@ void save_students(Student students[], int student_count, const char* file_path)
 
 int seat_exist(int row, int seat, Seat room[][MAX_SEATS], int rows, int seats) {
     int exist = 1;
-    if (row < 0 || seat < 0 || row > rows || seat > seats) {
+    if (row < 0 || seat < 0 || row >= rows || seat >= seats) {
         exist = 0;
     }
     

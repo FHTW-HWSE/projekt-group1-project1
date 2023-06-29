@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "../src/utils.hpp"
 
-TEST_CASE( "First run", "[test]") {
+TEST_CASE( "Full Test") {
     printf("Generating 5 fictional students to log into a CSV-File:\n"
     "Lisa Mueller T-9876543\n"
     "David Schmidt T-1234567\n"
@@ -34,15 +34,18 @@ TEST_CASE( "First run", "[test]") {
     REQUIRE( returned_student_count == 5 );
     printf("ok\n\n"
            "Verifying data\n");
-    SECTION("Student loaded from file") {
-        int i = GENERATE(0,1,2,3,4);
-        
+    
+    for (int i = 0; i < 5; i++) {
         REMOVE_NEWLINE(students_from_file[i].name);
         REMOVE_NEWLINE(students_from_file[i].id);
-    
+    }
+
+    SECTION("Student loaded from file") {
+        int i = GENERATE(0,1,2,3,4);
         REQUIRE(strcmp(students_from_file[i].name, test_students[i].name) == 0);
         REQUIRE(strcmp(students_from_file[i].id, test_students[i].id) == 0);
     }
+
     printf("ok\n\n"
            "Testing occupation patterns\n");
     const int rows  = 3;
@@ -77,6 +80,9 @@ TEST_CASE( "First run", "[test]") {
                 REQUIRE(test_classroom[r][s].available == 0);
         }
     }
+    
+    // This would require user input. Uncomment if desired.
+    /*
     SECTION("select_layout"){
         printf("ok\n\n"
             "Please enter 1 for the next promt\n");
@@ -88,6 +94,7 @@ TEST_CASE( "First run", "[test]") {
         printf("\n\nPlease hit Enter for the next promt\n");
         CHECK(select_layout() == FULL);
     }
+    */
     printf("\n\nAssigning seats\n"
            "Full\n");
     fully_occupied(test_classroom, rows, seats);
@@ -114,9 +121,9 @@ TEST_CASE( "First run", "[test]") {
         assign_seat(test_classroom, rows, seats, students_from_file[i]);
     REQUIRE(strcmp(test_classroom[0][1].student.name, test_students[0].name) == 0);
     REQUIRE(strcmp(test_classroom[0][1].student.id, test_students[0].id) == 0);
-
-    REQUIRE(strcmp(test_classroom[1][1].student.name, test_students[1].name) == 0);
-    REQUIRE(strcmp(test_classroom[1][1].student.id, test_students[1].id) == 0);
+    
+    REQUIRE(strcmp(test_classroom[1][0].student.name, test_students[1].name) == 0);
+    REQUIRE(strcmp(test_classroom[1][0].student.id, test_students[1].id) == 0);
 
     REQUIRE(strcmp(test_classroom[1][2].student.name, test_students[2].name) == 0);
     REQUIRE(strcmp(test_classroom[1][2].student.id, test_students[2].id) == 0);
