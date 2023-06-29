@@ -11,8 +11,7 @@ Verzeichnis:
 I........Aufgabenstellung
 II.......Requirements
 III......USER STORIES
-IV.......Programmstruktur
-V........Projektdokumentation
+IV........Projektdokumentation
 
 **************************************************************************************************************************************************************************************************************
 
@@ -119,26 +118,7 @@ Then:  Sitznachbarn werden in der Konsole ausgegeben.
 
 **************************************************************************************************************************************************************************************************************
 
-IV. Programmstruktur:
-
-Main:
-    Abfrage der gewünschten Ausgabe, Hörsaalgenerierung oder Sitznachbarabfrage.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Projektdokumentation
+IV. Projektdokumentation
 Projektname: Projekt1Gruppe1
 Projektmitglieder: Eteri Cholokava, Karin Lang, Samin Aghaeihajiagha
 
