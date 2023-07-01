@@ -1,5 +1,6 @@
 # projekt-group1-project1
 projekt-group1-project1 created by GitHub Classroom
+
 **Sitzverwaltungssystem**
 
 Dieses Programm ermöglicht das Erstellen und Verwalten von Sitzplatzanordnungen für Prüfungen. Es bietet zwei Hauptfunktionen:
