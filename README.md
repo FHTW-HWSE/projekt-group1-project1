@@ -22,7 +22,9 @@ danach befinden sich im build-Ordner eine test_app mit den unit tests und eine r
 **Sitznachbarn abfragen:** Mit dieser Option können Sie die Sitznachbarn eines bestimmten Studierenden abfragen.
 
 Option 1: Neue Prüfung erstellen
+
 Geben Sie 1 ein und drücken Sie die Eingabetaste.
+
 Geben Sie die folgenden Informationen zur Prüfung ein:
 Datum (JJJJMMTT): Geben Sie das Prüfungsdatum im Format JJJJMMTT ein.
 Uhrzeit (HHMM): Geben Sie die Prüfungszeit im Format HHMM ein.
@@ -35,7 +37,10 @@ Wählen Sie eine Option für die Sitzplatzanordnung:
 VOLL: Alle Sitze im Raum werden besetzt sein.
 HALB: Nur die Hälfte der Sitze im Raum wird besetzt sein.
 VIERTEL: Nur ein Viertel der Sitze im Raum wird besetzt sein.
-Das Programm generiert eine eindeutige Prüfungs-ID und zeigt sie an. Diese ID wird für zukünftige Abfragen benötigt.
+
+Das Programm generiert eine eindeutige Prüfungs-ID und zeigt sie an. 
+Diese ID wird für zukünftige Abfragen benötigt.
+
 Das Programm erstellt zwei Dateien:
 Eine CSV-Datei ([test_id].csv) mit den Prüfungsdetails.
 Eine Studentendatei ([test_id]S.csv) mit den Namen und IDs der Studierenden.
