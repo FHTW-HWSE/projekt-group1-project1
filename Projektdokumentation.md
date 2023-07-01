@@ -81,7 +81,9 @@ When:  ein neues Exam stattfindet
 Then:  Benützer wird aufgefordert ein neues Exam zu erstellen oder eine Sitznachbarabfrage stattfinden soll
 
 Given: Benützer will neues Exam starten
+
 When:  ein neues Exam stattfindet
+
 Then:  Benützer wird aufgefordert Exameigenschaften einzugeben
 
 Given: Benützer will Exam speichern
