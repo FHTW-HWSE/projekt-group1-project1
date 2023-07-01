@@ -84,9 +84,8 @@ Given: Benützer startet Programm
 
 When:  ein neues Exam stattfindet
 
-Then:  Benützer wird aufgefordert ein neues Exam zu erstellen oder eine Sitznachbarabfrage stattfinden soll<br>
-
-
+Then:  Benützer wird aufgefordert ein neues Exam zu erstellen oder eine Sitznachbarabfrage stattfinden soll
+<br>
 Given: Benützer will neues Exam starten
 
 When:  ein neues Exam stattfindet
