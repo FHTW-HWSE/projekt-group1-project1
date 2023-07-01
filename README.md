@@ -28,7 +28,9 @@ Datum (JJJJMMTT): Geben Sie das Prüfungsdatum im Format JJJJMMTT ein.
 Uhrzeit (HHMM): Geben Sie die Prüfungszeit im Format HHMM ein.
 Raumnummer: Geben Sie die Raumnummer ein, in der die Prüfung stattfindet.
 Name: Geben Sie den Namen der Prüfung ein.
+
 Geben Sie anschließend die Anzahl der Sitzreihen im Raum und die Anzahl der Sitze pro Reihe an.
+
 Wählen Sie eine Option für die Sitzplatzanordnung:
 VOLL: Alle Sitze im Raum werden besetzt sein.
 HALB: Nur die Hälfte der Sitze im Raum wird besetzt sein.
@@ -43,6 +45,7 @@ Geben Sie die Prüfungs-ID der Prüfung ein, die Sie abfragen möchten. Stellen 
 Das Programm lädt die Sitzplatzanordnung für die angegebene Prüfung.
 Es zeigt die Liste der an der Prüfung teilnehmenden Studierenden an.
 Geben Sie den Namen eines Studenten ein.um die Sitznachbarn abzufragen.
+
 Wenn eine Übereinstimmung gefunden wird, zeigt das Programm die direkten und indirekten Sitznachbarn des angegebenen Studierenden an.
 Wenn keine Übereinstimmung gefunden wird, zeigt das Programm an, dass kein Studierender mit dem angegebenen Namen gefunden wurde.
 Einschränkungen
