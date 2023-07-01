@@ -2,6 +2,8 @@
 #include <catch2/catch.hpp>
 #include <stdio.h>
 #include "../src/utils.hpp"
+#include "../src/io.hpp"
+#include "../src/seating.hpp"
 
 TEST_CASE( "Full Test") {
     printf("Generating 5 fictional students to log into a CSV-File:\n"

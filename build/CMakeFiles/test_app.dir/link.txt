@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/test_app.dir/src/utils.cpp.o CMakeFiles/test_app.dir/test/unit_tests.cpp.o -o test_app  -lm 
+/usr/bin/g++ -g CMakeFiles/test_app.dir/src/io.cpp.o CMakeFiles/test_app.dir/src/seating.cpp.o CMakeFiles/test_app.dir/test/unit_tests.cpp.o -o test_app  -lm 

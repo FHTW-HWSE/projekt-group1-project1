@@ -1,8 +1,13 @@
 [
 {
   "directory": "/home/student/Documents/projekt-group1-project1/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/test_app.dir/src/utils.cpp.o -c /home/student/Documents/projekt-group1-project1/src/utils.cpp",
-  "file": "/home/student/Documents/projekt-group1-project1/src/utils.cpp"
+  "command": "/usr/bin/g++   -g -o CMakeFiles/test_app.dir/src/io.cpp.o -c /home/student/Documents/projekt-group1-project1/src/io.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/io.cpp"
+},
+{
+  "directory": "/home/student/Documents/projekt-group1-project1/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/test_app.dir/src/seating.cpp.o -c /home/student/Documents/projekt-group1-project1/src/seating.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/seating.cpp"
 },
 {
   "directory": "/home/student/Documents/projekt-group1-project1/build",
@@ -11,8 +16,13 @@
 },
 {
   "directory": "/home/student/Documents/projekt-group1-project1/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/release_app.dir/src/utils.cpp.o -c /home/student/Documents/projekt-group1-project1/src/utils.cpp",
-  "file": "/home/student/Documents/projekt-group1-project1/src/utils.cpp"
+  "command": "/usr/bin/g++   -g -o CMakeFiles/release_app.dir/src/io.cpp.o -c /home/student/Documents/projekt-group1-project1/src/io.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/io.cpp"
+},
+{
+  "directory": "/home/student/Documents/projekt-group1-project1/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/release_app.dir/src/seating.cpp.o -c /home/student/Documents/projekt-group1-project1/src/seating.cpp",
+  "file": "/home/student/Documents/projekt-group1-project1/src/seating.cpp"
 },
 {
   "directory": "/home/student/Documents/projekt-group1-project1/build",

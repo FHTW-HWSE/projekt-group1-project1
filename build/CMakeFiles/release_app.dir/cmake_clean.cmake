@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/release_app.dir/src/io.cpp.o"
+  "CMakeFiles/release_app.dir/src/io.cpp.o.d"
   "CMakeFiles/release_app.dir/src/main.cpp.o"
   "CMakeFiles/release_app.dir/src/main.cpp.o.d"
-  "CMakeFiles/release_app.dir/src/utils.cpp.o"
-  "CMakeFiles/release_app.dir/src/utils.cpp.o.d"
+  "CMakeFiles/release_app.dir/src/seating.cpp.o"
+  "CMakeFiles/release_app.dir/src/seating.cpp.o.d"
   "release_app"
   "release_app.pdb"
 )

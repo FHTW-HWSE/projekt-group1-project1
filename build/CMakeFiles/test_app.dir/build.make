@@ -69,24 +69,38 @@ include CMakeFiles/test_app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_app.dir/flags.make
 
-CMakeFiles/test_app.dir/src/utils.cpp.o: CMakeFiles/test_app.dir/flags.make
-CMakeFiles/test_app.dir/src/utils.cpp.o: /home/student/Documents/projekt-group1-project1/src/utils.cpp
-CMakeFiles/test_app.dir/src/utils.cpp.o: CMakeFiles/test_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_app.dir/src/utils.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_app.dir/src/utils.cpp.o -MF CMakeFiles/test_app.dir/src/utils.cpp.o.d -o CMakeFiles/test_app.dir/src/utils.cpp.o -c /home/student/Documents/projekt-group1-project1/src/utils.cpp
+CMakeFiles/test_app.dir/src/io.cpp.o: CMakeFiles/test_app.dir/flags.make
+CMakeFiles/test_app.dir/src/io.cpp.o: /home/student/Documents/projekt-group1-project1/src/io.cpp
+CMakeFiles/test_app.dir/src/io.cpp.o: CMakeFiles/test_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_app.dir/src/io.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_app.dir/src/io.cpp.o -MF CMakeFiles/test_app.dir/src/io.cpp.o.d -o CMakeFiles/test_app.dir/src/io.cpp.o -c /home/student/Documents/projekt-group1-project1/src/io.cpp
 
-CMakeFiles/test_app.dir/src/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_app.dir/src/utils.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Documents/projekt-group1-project1/src/utils.cpp > CMakeFiles/test_app.dir/src/utils.cpp.i
+CMakeFiles/test_app.dir/src/io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_app.dir/src/io.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Documents/projekt-group1-project1/src/io.cpp > CMakeFiles/test_app.dir/src/io.cpp.i
 
-CMakeFiles/test_app.dir/src/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_app.dir/src/utils.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Documents/projekt-group1-project1/src/utils.cpp -o CMakeFiles/test_app.dir/src/utils.cpp.s
+CMakeFiles/test_app.dir/src/io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_app.dir/src/io.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Documents/projekt-group1-project1/src/io.cpp -o CMakeFiles/test_app.dir/src/io.cpp.s
+
+CMakeFiles/test_app.dir/src/seating.cpp.o: CMakeFiles/test_app.dir/flags.make
+CMakeFiles/test_app.dir/src/seating.cpp.o: /home/student/Documents/projekt-group1-project1/src/seating.cpp
+CMakeFiles/test_app.dir/src/seating.cpp.o: CMakeFiles/test_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_app.dir/src/seating.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_app.dir/src/seating.cpp.o -MF CMakeFiles/test_app.dir/src/seating.cpp.o.d -o CMakeFiles/test_app.dir/src/seating.cpp.o -c /home/student/Documents/projekt-group1-project1/src/seating.cpp
+
+CMakeFiles/test_app.dir/src/seating.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_app.dir/src/seating.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Documents/projekt-group1-project1/src/seating.cpp > CMakeFiles/test_app.dir/src/seating.cpp.i
+
+CMakeFiles/test_app.dir/src/seating.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_app.dir/src/seating.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Documents/projekt-group1-project1/src/seating.cpp -o CMakeFiles/test_app.dir/src/seating.cpp.s
 
 CMakeFiles/test_app.dir/test/unit_tests.cpp.o: CMakeFiles/test_app.dir/flags.make
 CMakeFiles/test_app.dir/test/unit_tests.cpp.o: /home/student/Documents/projekt-group1-project1/test/unit_tests.cpp
 CMakeFiles/test_app.dir/test/unit_tests.cpp.o: CMakeFiles/test_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_app.dir/test/unit_tests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_app.dir/test/unit_tests.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_app.dir/test/unit_tests.cpp.o -MF CMakeFiles/test_app.dir/test/unit_tests.cpp.o.d -o CMakeFiles/test_app.dir/test/unit_tests.cpp.o -c /home/student/Documents/projekt-group1-project1/test/unit_tests.cpp
 
 CMakeFiles/test_app.dir/test/unit_tests.cpp.i: cmake_force
@@ -99,17 +113,19 @@ CMakeFiles/test_app.dir/test/unit_tests.cpp.s: cmake_force
 
 # Object files for target test_app
 test_app_OBJECTS = \
-"CMakeFiles/test_app.dir/src/utils.cpp.o" \
+"CMakeFiles/test_app.dir/src/io.cpp.o" \
+"CMakeFiles/test_app.dir/src/seating.cpp.o" \
 "CMakeFiles/test_app.dir/test/unit_tests.cpp.o"
 
 # External object files for target test_app
 test_app_EXTERNAL_OBJECTS =
 
-test_app: CMakeFiles/test_app.dir/src/utils.cpp.o
+test_app: CMakeFiles/test_app.dir/src/io.cpp.o
+test_app: CMakeFiles/test_app.dir/src/seating.cpp.o
 test_app: CMakeFiles/test_app.dir/test/unit_tests.cpp.o
 test_app: CMakeFiles/test_app.dir/build.make
 test_app: CMakeFiles/test_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

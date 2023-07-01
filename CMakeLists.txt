@@ -5,9 +5,9 @@ set(CMAKE_C_STANDARD 99)
 
 find_package(Catch2 REQUIRED)
 
-add_executable(test_app src/utils.cpp test/unit_tests.cpp)
+add_executable(test_app src/io.cpp src/seating.cpp test/unit_tests.cpp)
 
-add_executable(release_app src/utils.cpp src/main.cpp)
+add_executable(release_app src/io.cpp src/seating.cpp src/main.cpp)
 
 target_link_libraries(test_app Catch2::Catch2)
 

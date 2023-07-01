@@ -69,24 +69,38 @@ include CMakeFiles/release_app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/release_app.dir/flags.make
 
-CMakeFiles/release_app.dir/src/utils.cpp.o: CMakeFiles/release_app.dir/flags.make
-CMakeFiles/release_app.dir/src/utils.cpp.o: /home/student/Documents/projekt-group1-project1/src/utils.cpp
-CMakeFiles/release_app.dir/src/utils.cpp.o: CMakeFiles/release_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/release_app.dir/src/utils.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_app.dir/src/utils.cpp.o -MF CMakeFiles/release_app.dir/src/utils.cpp.o.d -o CMakeFiles/release_app.dir/src/utils.cpp.o -c /home/student/Documents/projekt-group1-project1/src/utils.cpp
+CMakeFiles/release_app.dir/src/io.cpp.o: CMakeFiles/release_app.dir/flags.make
+CMakeFiles/release_app.dir/src/io.cpp.o: /home/student/Documents/projekt-group1-project1/src/io.cpp
+CMakeFiles/release_app.dir/src/io.cpp.o: CMakeFiles/release_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/release_app.dir/src/io.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_app.dir/src/io.cpp.o -MF CMakeFiles/release_app.dir/src/io.cpp.o.d -o CMakeFiles/release_app.dir/src/io.cpp.o -c /home/student/Documents/projekt-group1-project1/src/io.cpp
 
-CMakeFiles/release_app.dir/src/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_app.dir/src/utils.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Documents/projekt-group1-project1/src/utils.cpp > CMakeFiles/release_app.dir/src/utils.cpp.i
+CMakeFiles/release_app.dir/src/io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_app.dir/src/io.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Documents/projekt-group1-project1/src/io.cpp > CMakeFiles/release_app.dir/src/io.cpp.i
 
-CMakeFiles/release_app.dir/src/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_app.dir/src/utils.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Documents/projekt-group1-project1/src/utils.cpp -o CMakeFiles/release_app.dir/src/utils.cpp.s
+CMakeFiles/release_app.dir/src/io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_app.dir/src/io.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Documents/projekt-group1-project1/src/io.cpp -o CMakeFiles/release_app.dir/src/io.cpp.s
+
+CMakeFiles/release_app.dir/src/seating.cpp.o: CMakeFiles/release_app.dir/flags.make
+CMakeFiles/release_app.dir/src/seating.cpp.o: /home/student/Documents/projekt-group1-project1/src/seating.cpp
+CMakeFiles/release_app.dir/src/seating.cpp.o: CMakeFiles/release_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/release_app.dir/src/seating.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_app.dir/src/seating.cpp.o -MF CMakeFiles/release_app.dir/src/seating.cpp.o.d -o CMakeFiles/release_app.dir/src/seating.cpp.o -c /home/student/Documents/projekt-group1-project1/src/seating.cpp
+
+CMakeFiles/release_app.dir/src/seating.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_app.dir/src/seating.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Documents/projekt-group1-project1/src/seating.cpp > CMakeFiles/release_app.dir/src/seating.cpp.i
+
+CMakeFiles/release_app.dir/src/seating.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_app.dir/src/seating.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Documents/projekt-group1-project1/src/seating.cpp -o CMakeFiles/release_app.dir/src/seating.cpp.s
 
 CMakeFiles/release_app.dir/src/main.cpp.o: CMakeFiles/release_app.dir/flags.make
 CMakeFiles/release_app.dir/src/main.cpp.o: /home/student/Documents/projekt-group1-project1/src/main.cpp
 CMakeFiles/release_app.dir/src/main.cpp.o: CMakeFiles/release_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/release_app.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/release_app.dir/src/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_app.dir/src/main.cpp.o -MF CMakeFiles/release_app.dir/src/main.cpp.o.d -o CMakeFiles/release_app.dir/src/main.cpp.o -c /home/student/Documents/projekt-group1-project1/src/main.cpp
 
 CMakeFiles/release_app.dir/src/main.cpp.i: cmake_force
@@ -99,17 +113,19 @@ CMakeFiles/release_app.dir/src/main.cpp.s: cmake_force
 
 # Object files for target release_app
 release_app_OBJECTS = \
-"CMakeFiles/release_app.dir/src/utils.cpp.o" \
+"CMakeFiles/release_app.dir/src/io.cpp.o" \
+"CMakeFiles/release_app.dir/src/seating.cpp.o" \
 "CMakeFiles/release_app.dir/src/main.cpp.o"
 
 # External object files for target release_app
 release_app_EXTERNAL_OBJECTS =
 
-release_app: CMakeFiles/release_app.dir/src/utils.cpp.o
+release_app: CMakeFiles/release_app.dir/src/io.cpp.o
+release_app: CMakeFiles/release_app.dir/src/seating.cpp.o
 release_app: CMakeFiles/release_app.dir/src/main.cpp.o
 release_app: CMakeFiles/release_app.dir/build.make
 release_app: CMakeFiles/release_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable release_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Documents/projekt-group1-project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable release_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/release_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

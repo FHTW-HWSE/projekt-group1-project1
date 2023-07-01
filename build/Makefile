@@ -142,6 +142,33 @@ release_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/build
 .PHONY : release_app/fast
 
+src/io.o: src/io.cpp.o
+.PHONY : src/io.o
+
+# target to build an object file
+src/io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/io.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/io.cpp.o
+.PHONY : src/io.cpp.o
+
+src/io.i: src/io.cpp.i
+.PHONY : src/io.i
+
+# target to preprocess a source file
+src/io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/io.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/io.cpp.i
+.PHONY : src/io.cpp.i
+
+src/io.s: src/io.cpp.s
+.PHONY : src/io.s
+
+# target to generate assembly for a file
+src/io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/io.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/io.cpp.s
+.PHONY : src/io.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -166,32 +193,32 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/utils.o: src/utils.cpp.o
-.PHONY : src/utils.o
+src/seating.o: src/seating.cpp.o
+.PHONY : src/seating.o
 
 # target to build an object file
-src/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.cpp.o
-.PHONY : src/utils.cpp.o
+src/seating.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/seating.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/seating.cpp.o
+.PHONY : src/seating.cpp.o
 
-src/utils.i: src/utils.cpp.i
-.PHONY : src/utils.i
+src/seating.i: src/seating.cpp.i
+.PHONY : src/seating.i
 
 # target to preprocess a source file
-src/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.cpp.i
-.PHONY : src/utils.cpp.i
+src/seating.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/seating.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/seating.cpp.i
+.PHONY : src/seating.cpp.i
 
-src/utils.s: src/utils.cpp.s
-.PHONY : src/utils.s
+src/seating.s: src/seating.cpp.s
+.PHONY : src/seating.s
 
 # target to generate assembly for a file
-src/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/utils.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/utils.cpp.s
-.PHONY : src/utils.cpp.s
+src/seating.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/src/seating.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_app.dir/build.make CMakeFiles/release_app.dir/src/seating.cpp.s
+.PHONY : src/seating.cpp.s
 
 test/unit_tests.o: test/unit_tests.cpp.o
 .PHONY : test/unit_tests.o
@@ -227,12 +254,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... release_app"
 	@echo "... test_app"
+	@echo "... src/io.o"
+	@echo "... src/io.i"
+	@echo "... src/io.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
+	@echo "... src/seating.o"
+	@echo "... src/seating.i"
+	@echo "... src/seating.s"
 	@echo "... test/unit_tests.o"
 	@echo "... test/unit_tests.i"
 	@echo "... test/unit_tests.s"

@@ -4,6 +4,8 @@
 #include <time.h>
 #include <math.h>
 #include "utils.hpp"
+#include "io.hpp"
+#include "seating.hpp"
 
 int main(void) {
     Seat room[MAX_ROWS][MAX_SEATS];

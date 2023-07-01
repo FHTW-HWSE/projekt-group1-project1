@@ -72,4 +72,6 @@ CMakeFiles/release_app.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/student/Documents/projekt-group1-project1/src/utils.hpp
+ /home/student/Documents/projekt-group1-project1/src/utils.hpp \
+ /home/student/Documents/projekt-group1-project1/src/io.hpp \
+ /home/student/Documents/projekt-group1-project1/src/seating.hpp
