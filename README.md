@@ -13,6 +13,7 @@ Bevor Sie dieses Programm verwenden können, stellen Sie sicher, dass Folgendes 
 C-Compiler (z. B. GCC)
 
 In den build-Ordner ein Terminal öffnen und folgende Befehle ausführen
+
 cmake ..
 
 make 
