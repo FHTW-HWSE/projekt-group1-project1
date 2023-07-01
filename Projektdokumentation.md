@@ -83,7 +83,8 @@ Benützer will ein neues Exam erstellen (Name, Datum, Uhrzeit, Raumnummer) um ei
 Given: Benützer startet Programm
 When:  ein neues Exam stattfindet
 Then:  Benützer wird aufgefordert ein neues Exam zu erstellen oder eine Sitznachbarabfrage stattfinden soll
-
+<br>
+&nbsp;
 Given: Benützer will neues Exam starten
 When:  ein neues Exam stattfindet
 Then:  Benützer wird aufgefordert Exameigenschaften einzugeben
