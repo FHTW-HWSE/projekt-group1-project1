@@ -1,12 +1,20 @@
 # projekt-group1-project1
 projekt-group1-project1 created by GitHub Classroom
 **Sitzverwaltungssystem**
+
 Dieses Programm ermöglicht das Erstellen und Verwalten von Sitzplatzanordnungen für Prüfungen. Es bietet zwei Hauptfunktionen:
 
 Erstellen einer neuen Prüfung und Sitzplatzanordnung.
 Abfragen der Sitznachbarn eines bestimmten Studierenden.
 Voraussetzungen
 Bevor Sie dieses Programm verwenden können, stellen Sie sicher, dass Folgendes installiert ist:
+
+C-Compiler (z. B. GCC)
+
+In den build-Ordner ein Terminal öffnen und folgende Befehle ausführen
+cmake ..
+make 
+danach befinden sich im build-Ordner eine test_app mit den unit tests und eine release_app
 
 **Neue Prüfung erstellen:** Mit dieser Option können Sie eine neue Prüfung erstellen und eine Sitzplatzanordnung einrichten.
 
