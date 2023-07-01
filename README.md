@@ -33,4 +33,11 @@ Geben Sie 2 ein und drücken Sie die Eingabetaste.
 Geben Sie die Prüfungs-ID der Prüfung ein, die Sie abfragen möchten. Stellen Sie sicher, dass Sie die Dateierweiterung .csv angeben.
 Das Programm lädt die Sitzplatzanordnung für die angegebene Prüfung.
 Es zeigt die Liste der an der Prüfung teilnehmenden Studierenden an.
-Geben Sie den Namen eines Stud
+Geben Sie den Namen eines Studenten ein.um die Sitznachbarn abzufragen.
+Wenn eine Übereinstimmung gefunden wird, zeigt das Programm die direkten und indirekten Sitznachbarn des angegebenen Studierenden an.
+Wenn keine Übereinstimmung gefunden wird, zeigt das Programm an, dass kein Studierender mit dem angegebenen Namen gefunden wurde.
+Einschränkungen
+Die maximale Anzahl der Reihen (MAX_ROWS) und Sitze pro Reihe (MAX_SEATS) ist vordefiniert und muss möglicherweise für größere Sitzplatzanordnungen angepasst werden.
+Das Programm geht davon aus, dass der Benutzer korrekte und gültige Eingaben macht. Ungültige Eingaben können zu unerwartetem Verhalten oder Fehlern führen.
+Mitarbeit
+Beiträge zum Sitzverwaltungssystem sind willkommen. Wenn Sie auf Probleme stoßen oder Vorschläge zur Verbesserung haben, erstellen Sie bitte ein neues Issue oder reichen Sie einen Pull Request ein.
