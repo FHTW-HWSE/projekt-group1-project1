@@ -2,9 +2,9 @@ HWSE 2
 Gruppenprojekt 1    
 
 Projektteam Gruppe 1:
-Eteri Cholokava
-Karin Lang
-Samin Aghaeihajiagha   
+Eteri Cholokava,
+Karin Lang,
+Samin Aghaeihajiagha,  
 
 Verzeichnis:
 
