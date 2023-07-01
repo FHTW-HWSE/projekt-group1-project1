@@ -34,8 +34,11 @@ Name: Geben Sie den Namen der Prüfung ein.
 Geben Sie anschließend die Anzahl der Sitzreihen im Raum und die Anzahl der Sitze pro Reihe an.
 
 Wählen Sie eine Option für die Sitzplatzanordnung:
+
 VOLL: Alle Sitze im Raum werden besetzt sein.
+
 HALB: Nur die Hälfte der Sitze im Raum wird besetzt sein.
+
 VIERTEL: Nur ein Viertel der Sitze im Raum wird besetzt sein.
 
 Das Programm generiert eine eindeutige Prüfungs-ID und zeigt sie an. 
