@@ -11,8 +11,7 @@ Verzeichnis:
 I........Aufgabenstellung
 II.......Requirements
 III......USER STORIES
-IV.......Programmstruktur
-V........Projektdokumentation
+IV........Projektdokumentation
 
 **************************************************************************************************************************************************************************************************************
 
@@ -119,26 +118,7 @@ Then:  Sitznachbarn werden in der Konsole ausgegeben.
 
 **************************************************************************************************************************************************************************************************************
 
-IV. Programmstruktur:
-
-Main:
-    Abfrage der gewünschten Ausgabe, Hörsaalgenerierung oder Sitznachbarabfrage.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Projektdokumentation
+IV. Projektdokumentation
 Projektname: Projekt1Gruppe1
 Projektmitglieder: Eteri Cholokava, Karin Lang, Samin Aghaeihajiagha
 
@@ -152,4 +132,9 @@ das geliefert wird was der Kunde gefordert hat. Nicht mehr nicht weniger. Daher 
 Daher wurden Features gestrichen, da sie nicht Teil der Anforderung waren. 
 Um das Programm den Anforderungen entsprechend zu schreiben wurden dann mithilfe der UserStorys die Issues erstellt. Mithilfe von Git konnten wir das Projekt gemeinsam bearbeiten.
 Die Issues wurden aufgeteilt und in kleiner Sektionen unterteilt. Dadurch bekamen wir eine genauere Übersicht über das Projekt und konnten entsprechende Funktionen jedem einzelnen Projektmitarbeiter zuweisen.
+Hauptteil:
+Wir fingen an die Grundfunktionen zu implementieren die für die Eigenschaften der Programmattribute von Nöten waren. Wir erzeugten Funktionen die CSV Dateien erstellen, lesen und mit diesen arbeiten können, um Eigenschaften wie Studenten, Sitzplätze und Prüfungsdaten bearbeiten zu können. Sobald dessen Funktionalität bewiesen wurden, konnten wir auf diesem Fundament aufbauend die weitern Features implementieren. Zu jenen gehören das benützerfreundliche Userinterface was ein intuitives Menü beinhaltet, das von jedem Benützer instinktiv genutzt werden kann. Es wurde die Funktion inkludiert, die für jeden möglichen Hörsaal ein passendes Auslastungsmuster, für die angegebenen Daten von Anzahl an Reihen und Spalten, generieren kann. Dabei werden jedem Studenten ein Sitzplatz zugewiesen und dieser wird in einer eigenen CSV Datei gespeichert, im Falle einer Erkrankung des Studenten. In dieser Datei stehen die Namen der Studenten mit ihren Matrikelnummern. Darauf hin haben wir daran gearbeitet, das für den Fall, dass sich nun ein Student krank meldet, die indirekten und direkten Sitznachbarn in der Konsole ausgegeben werden können. Eine Prüfung beinhaltet 2 CSV Dateien. Wir haben es so bearbeitet, dass in einer Datei mit -T.csv Endung Prüfungungseigenschaften: Datum Uhrzeit Raumnummer, Name der Prüfung und wichtig für das rekonstruieren der Sitzplatzbelegung: die Größe und die Auslastung des Raumes, gespeichert werden. In der anderen Datei mit -S.csv Endung werden Studentenname und Studentenmatrikelnummer gespeichert. Es kam zu diskrepanzen als wir versuchten die Dateien mit einander zu verknüpfen um die Sitznachbarn ausgeben zu lasse, doch dann haben wir das Problem schnell gelöst da es sich nur um einen Formata-Error handelte. Die Suche nach desem, war jedoch etwas tricky a uns der Compiler dies nicht als Fehler anzeigte. Der Fehler machte sich nämlich nur dann bemerkbar, wenn mitten im Programm Funktionen übersprungen wurden und das Programm mit einem Segmentationfault abstürtze. Eben diese printF hat uns gehofen den Fehler zueroieren. Danach ließen sich die Studenten auf der Konsole ausgeben, nachdem man die Studentenerkennung eingegeben hat, bei der Abfrage.
+Abschluss:
+ Es war eine Herrausforderung CMake mit den Unittests zu verknüpfen, dafür mussten wir uns einiges an Wissen aneignen und neu lernen um dies auch umsetzten zu können. Letztendlich war es eine schöne Aufgabe die wir als starkes Team lösen konnten. 
+
 
