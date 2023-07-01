@@ -78,4 +78,5 @@ Das Programm geht davon aus, dass der Benutzer korrekte und gültige Eingaben ma
 
 Mitarbeit
 
-Beiträge zum Sitzverwaltungssystem sind willkommen. Wenn Sie auf Probleme stoßen oder Vorschläge zur Verbesserung haben, erstellen Sie bitte ein neues Issue oder reichen Sie einen Pull Request ein.
+Beiträge zum Sitzverwaltungssystem sind willkommen. 
+Wenn Sie auf Probleme stoßen oder Vorschläge zur Verbesserung haben, erstellen Sie bitte ein neues Issue oder reichen Sie einen Pull Request ein.
