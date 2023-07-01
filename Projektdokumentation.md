@@ -81,73 +81,45 @@ Benützer will ein neues Exam erstellen (Name, Datum, Uhrzeit, Raumnummer) um ei
 
 
 Given: Benützer startet Programm
-
 When:  ein neues Exam stattfindet
-
 Then:  Benützer wird aufgefordert ein neues Exam zu erstellen oder eine Sitznachbarabfrage stattfinden soll
-<br>
+
 Given: Benützer will neues Exam starten
-
 When:  ein neues Exam stattfindet
-
 Then:  Benützer wird aufgefordert Exameigenschaften einzugeben
 
-
 Given: Benützer will Exam speichern
-
 When:  Exameigenschaften eingegeben wurden
-
 Then:  werden Exameigenschaften in einer CSV Datei mit einer eigenen ID abgespeichert und diese ID wird ausgegeben
 
 
 Given: Benützer will die Auslastung zu einem Hörsaal generieren
-
 When:  ein neues Eam erstellt wurde
-
 Then:  Aufforderung an den Benützer die gewünschte Auslastung anzugeben
 
-
 Given: Aufforderung an den Benützer die Spalten und Rehen anzugeben
-
 When:  Auslastung angegeben wurde
-
 Then:  werden Anzahl der Spalten und Reihen angegeben
 
-
 Given: Student benütigt einen Sitzplatz
-
 When:  Auslastung und Größe generiert wurde
-
 Then:  wird der nächste freie Sitzplatz angezeigt, sofern einer existiert
 
-
 Given: Student wird auf diesem Sitzplatz gespeichert
-
 When:  Student an diesem Exam teilnimmt
-
 Then:  wird der Student mit dem dazugehörigen Sitzplatz in einer CSV Datei gespeichert
 
-
 Given: Benützer will die direkten und indirekten Sitznachbarn eines erkrankten Studenten abfragen
-
 When:  Student sich krank meldet
-
 Then:  wird im Menü Sitznachbarausgabe gewählt
 
-
 Given: Exam ID wird angegeben um die Sitznachbarn abzufragen
-
 When:  Benützer benötigt eine Liste der Studenten die an Examen teilgenommen haben
-
 Then:  Liste wird ausgegeben
 
-
 Given: Liste an Sitznachbarn soll eroiert werden
-
 When:  Sitznachbarn werden gesucht
-
 Then:  Sitznachbarn werden in der Konsole ausgegeben.
-
 
 **************************************************************************************************************************************************************************************************************
 
