@@ -14,7 +14,9 @@ C-Compiler (z. B. GCC)
 
 In den build-Ordner ein Terminal öffnen und folgende Befehle ausführen
 cmake ..
+
 make 
+
 danach befinden sich im build-Ordner eine test_app mit den unit tests und eine release_app
 
 **Neue Prüfung erstellen:** Mit dieser Option können Sie eine neue Prüfung erstellen und eine Sitzplatzanordnung einrichten.
