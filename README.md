@@ -27,8 +27,11 @@ Geben Sie 1 ein und drücken Sie die Eingabetaste.
 
 Geben Sie die folgenden Informationen zur Prüfung ein:
 Datum (JJJJMMTT): Geben Sie das Prüfungsdatum im Format JJJJMMTT ein.
+
 Uhrzeit (HHMM): Geben Sie die Prüfungszeit im Format HHMM ein.
+
 Raumnummer: Geben Sie die Raumnummer ein, in der die Prüfung stattfindet.
+
 Name: Geben Sie den Namen der Prüfung ein.
 
 Geben Sie anschließend die Anzahl der Sitzreihen im Raum und die Anzahl der Sitze pro Reihe an.
